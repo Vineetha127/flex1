@@ -1,0 +1,65 @@
+.container{
+    width:1978px;
+    height:95vh;
+    margin: 20px;
+    border:1px solid black;
+    background-image: url(./bgimg.jpg);
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    text-align: center;
+    padding-top:-205px;
+    flex-wrap: wrap; 
+    flex-direction:column; 
+    animation-name: name;
+    animation-duration: 3s;
+    position:fixed;
+}
+#part1,#part2,#part3,#part4,#part5,#part6{
+    height:300px;
+    width:500px;
+    background-color:burlywood;
+    margin:10px;
+    margin-left: 180px;
+    font-style: italic;
+    margin-top: 40px;
+    margin-right:1px;
+    transform:rotate(45deg);
+    transition:3s;
+    
+}
+#part1,#part2,#part3,#part4,#part5,#part6:hover{
+     transform: rotate(360deg);
+    
+}
+h3{
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-family:cursive
+}
+#child{
+    margin-top: -796px;
+    height:50px;
+    width:150px;
+    background-color: white;
+    animation-name: msg;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-style: italic;
+    margin-left: 10px;
+    position: fixed;
+}
+@keyframes msg{
+    from{background-color: white;}
+    to{background-color:cadetblue;}
+    from{width:20px;}
+    to{width:1950px;}
+}
+img{
+    height: 650px;
+    width:450px;
+    margin-top: -30px;
+}
